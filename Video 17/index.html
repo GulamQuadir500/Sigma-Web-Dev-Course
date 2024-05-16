@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element Selectors */
+        div {
+            /* background-color: red; */
+        }
+
+        /* class selectors */
+        .red {
+            background-color: red;
+        }
+
+        /* ID selectors */
+        #green {
+            background-color: green;
+        }
+
+        /* Child selectors */
+        div>p {
+            color: yellow;
+            background-color: black;
+        }
+
+        /* Desendent Selectors */
+        div p {
+            background-color: gray;
+            color: wheat;
+        }
+
+        /* universal selector */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: gray;
+        }
+
+        a:hover{
+            background-color: slategrey;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </main>
+    <div class="red">I am a Div
+        <p>I am para inside div</p>
+    </div>
+    <div id="green">
+        <p>I am another para inside Div</p>
+    </div>
+    <div>
+        <article>
+            <p>I am another para inside Div and article</p>
+        </article>
+        <a href="https://google.com">Got to Google</a>
+        <a href="https://facebook.com">Got to Facebook</a>
+    </div>
+</body>
+
+</html>
