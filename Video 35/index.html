@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: blueviolet;
+        } */
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{
+            padding-top: 23px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+        /* .boxes::before{
+            content: "Gulam is good";
+        } */
+
+        .boxes::after{
+            content: "Gulam is good";
+            color: red;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 34px;
+        }
+
+        input::placeholder{
+            color: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima earum suscipit, cum provident accusamus id ut alias! Neque animi officiis illum quos vero? Quia, eveniet sapiente harum voluptatibus, quasi voluptates consequuntur commodi autem quas ipsum maxime minus nihil quisquam ratione beatae, obcaecati dolore quaerat.</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" name="" id="" placeholder="Input your text here">
+    </div>
+
+</body>
+
+</html>
