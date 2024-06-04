@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000;
+            /* Ensures the navbar stays above other content */
+        }
+
+        .navbar nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* justify-content: center; */
+            /* Center the navigation links */
+        }
+
+        .navbar nav ul li {
+            margin: 0 15px;
+        }
+
+        .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        .navbar nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+
+        .container {
+            height: 90vh;
+            background-color: rgb(158, 162, 153);
+            display: flex;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 330px;
+            background-color: yellow;
+            margin: 80px 100px;
+
+        }
+
+        .box2 {
+            width: 400px;
+            height: 330px;
+            background-color: rgb(0, 255, 26);
+            margin: 80px 0px 0px 420px;
+        }
+
+        .content {
+            background-color: gray;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            width: 70%;
+            /* display: flex; */
+
+        }
+
+        .line {
+            padding: 40px;
+            color: white;
+        }
+
+        .logo {
+            position: fixed;
+            right: 0;
+            transform: translateY(-70%);
+            max-width: 100px;
+            height: auto;
+        }
+
+        .foot {
+            bottom: 0;
+            background-color: #333;
+            padding: 20px 25px;
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 14px;
+        }
+
+        .foot span {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-icon-with-png-and-vector-format-for-unlimited-22.png"
+        alt="logo" class="logo">
+
+    <div class="content">
+        <h1 class="line">Welcome to Sigma Web Development Express</h1>
+    </div>
+
+    <footer class="foot">
+        <span>All rights reserve &copy Copyright 2024</span>
+    </footer>
+
+</body>
+
+</html>
