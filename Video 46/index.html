@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            background-color: rgb(26, 105, 105);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation-name: tipuKaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 0, 0.05, 1.24);
+            animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+
+            /* This is animaton shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: tipuKaAnimation 3s ease-in-out 2s infinite alternate forwards,
+                tipu2 3s ease-in-out 2s infinite alternate forwards;
+
+        }
+
+        @keyframes tipuKaAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes tipu2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(330deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
