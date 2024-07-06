@@ -126,3 +126,174 @@ section span img {
     gap: 12px;
   }
 }
+
+.third {
+  margin-top: 70px;
+  height: 100vh;
+  background-color: #222222;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.join-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.join-text h3 {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.join-text p {
+  width: 26vw;
+  text-align: center;
+}
+.form {
+  background-color: white;
+  margin-top: 73px;
+  padding: 25px 65px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form h3 {
+  color: #00b6d1;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.form p {
+  font-size: 17px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.form input {
+  padding: 15px 49px;
+  border: 1px solid #bababa;
+}
+
+.form div button {
+  background-color: #00b6d1;
+  padding: 14px 105px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 800;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.end-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 212px;
+}
+
+.end-text h1 {
+}
+
+.end-text p {
+  /* gap: 10px; */
+  margin: 5px;
+}
+
+.end-text p span {
+  color: #00b6d1;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 55px;
+  margin-top: 60px;
+}
+
+.para {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.footer-1 ul li {
+  list-style: none;
+  display: flex;
+  margin: 5px;
+  color: #222222;
+  margin-left: -38px;
+  cursor: pointer;
+}
+
+.footer-1 div {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  width: 12vw;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.footer-1 input {
+  padding: 12px 21px;
+  border: 1px solid #bababa;
+  border-radius: 7px;
+}
+
+.footer-1 button {
+  background-color: #00b6d1;
+  padding: 10px 65px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  margin: 11px 0;
+  cursor: pointer;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 27px;
+}
+.footer-2 a img {
+  width: 139px;
+  height: 45px;
+  /* margin-left: 100px; */
+}
+
+.icons {
+  width: 19px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.end-line {
+  margin-left: 291px;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 945px) {
+  .join {
+    flex-direction: column;
+  }
+}
