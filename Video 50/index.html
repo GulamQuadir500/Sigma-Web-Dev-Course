@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .img1 {
+            filter: blur(5px);
+        }
+
+        .img2 {
+            filter: brightness(80%) contrast(100%);
+            /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+            filter: opacity(25%) saturate(30%) sepia(60%);
+
+        }
+
+        .img3 {
+            filter: grayscale(80%) hue-rotate(90deg) invert(75%);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1"
+            src="https://as2.ftcdn.net/v2/jpg/06/21/38/09/1000_F_621380970_R7J1LVl5jj0opdCWhU8QTGo8KU56G03x.jpg" alt="">
+        <img class="img2"
+            src="https://images.news18.com/ibnlive/uploads/2023/01/shah-rukh-khan-2-16731768194x3.jpg?impolicy=website&width=640&height=480"
+            alt="">
+        <img class="img3" src="https://cdn.siasat.com/wp-content/uploads/2024/02/salman-khan-prem-ki-shadi-780x470.jpg"
+            alt="">
+    </div>
+</body>
+
+</html>
