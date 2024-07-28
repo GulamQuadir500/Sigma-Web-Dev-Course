@@ -46,11 +46,11 @@ console.log(x.sort());  // [ 0, 1, 5, 7, 7, 9 ]
 
 // splice  --> can be used to add new items to an array
 
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers.splice(2, 1, 23, 24));
-console.log(numbers); // [ 1, 2, 23, 24, 4, 5 ]
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.splice(2, 1, 23, 24));
+// console.log(numbers); // [ 1, 2, 23, 24, 4, 5 ]
 
-console.log(numbers.reverse()); // [ 5, 4, 24, 23, 2, 1 ]
+// console.log(numbers.reverse()); // [ 5, 4, 24, 23, 2, 1 ]
 
 
 // slice --> its a piece f an array which creates a new array
@@ -73,14 +73,18 @@ console.log(rev.reverse())
 // const numbers = [1, 2, 3, 4, 5];
 
 // numbers.forEach(number => {
-//   console.log(number);
+//     console.log(number);
 // });
 
 // 2. `map`
 // The `map` method creates a new array populated with the results of calling a provided function on every element in the calling array.
 
 // const numbers = [1, 2, 3, 4, 5];
-// const squaredNumbers = numbers.map(number => number * number);
+// // const squaredNumbers = numbers.map(number => number * number);
+
+// const squaredNumbers = numbers.map(number => {
+//     number * number
+// })
 
 // console.log(squaredNumbers); // [1, 4, 9, 16, 25]
 
@@ -144,7 +148,7 @@ console.log(rev.reverse())
 // const numbers = [1, 2, 3, 4, 5];
 
 // for (const number of numbers) {
-//   console.log(number);
+//     console.log(number);
 // }
 
 
