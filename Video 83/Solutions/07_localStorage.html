@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking App</title>
+</head>
+
+<body>
+    <!-- 7. The Local Storage Manager:
+    You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a
+    note object and saves it to the browser's local storage. -->
+    <h1>Note-Taking App</h1>
+    <form id="noteForm">
+        <label for="noteContent">Note:</label>
+        <textarea name="noteContent" id="noteContent" required></textarea><br><br>
+        <button type="submit">Save Notes</button>
+    </form>
+
+    <div id="notes"></div>
+
+
+    <script>
+        function saveNoteToLocalStorage(note) {
+            const noteKey = `note_${new Date().getDate()}`
+            const noteString = JSON.stringify(note);
+            localStorage.setItem(noteKey, noteString);
+        }
+
+        function displayNotes() {
+            const notesContainer = document.getElementById('notes');
+            notesContainer.innerHTML = ''
+
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key.startsWith('note_')) {
+                    const note = JSON.parse(localStorage.getItem(key));
+                    const noteDiv = document.createElement('div');
+                    noteDiv.textContent = note.content;
+                    notesContainer.appendChild(noteDiv);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
